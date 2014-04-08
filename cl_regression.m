@@ -88,13 +88,17 @@ value = sqrt(g_cos^2 + g_sin^2)/length(x);
 function [g_cos,g_sin] = summed_vector(x,phase,slope)
 % Returns the two components of a vector,
 % which is the summed difference between a linear function and the data points.
-  
-g_cos=0; 
-g_sin=0;
 
-for i=1:length(x),
-     ph = phase(i) - 2* pi * x(i) * slope;  %phase difference
-     g_cos = g_cos + cos(ph);   % sum up phase differences
-     g_sin = g_sin + sin(ph);
-end 
+ph = phase - 2*pi*x*slope;  % phase difference
+g_cos = sum(cos(ph));       % sum up phase differences
+g_sin = sum(sin(ph));
   
+% above added for perfomrance. original code follows HS2013
+% g_cos=0; 
+% g_sin=0;
+%
+% for i=1:length(x),
+%      ph = phase(i) - 2* pi * x(i) * slope;  %phase difference
+%      g_cos = g_cos + cos(ph);   % sum up phase differences
+%      g_sin = g_sin + sin(ph);
+% end 
