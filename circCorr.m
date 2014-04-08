@@ -25,6 +25,9 @@ function [rho pval ts] = circCorr(alpha,beta)
 if size(alpha,2) > size(alpha,1)
 	alpha = alpha';
 end
+if size(beta,2) > size(beta,1)
+	beta = beta';
+end
 
 n = length(alpha);
 alpha_bar = circMean(alpha);
