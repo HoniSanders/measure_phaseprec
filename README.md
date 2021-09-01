@@ -15,7 +15,8 @@ Kempter R, Leibold C, Buzsáki G, Diba K, Schmidt R (2012) Quantifying circular-
 Also, see Philipp Beren's CircStat toolbox, which this is based on.  
 https://github.com/circstat/circstat-matlab or  
 http://www.mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox--directional-statistics- or  
-https://philippberens.wordpress.com/code/circstats/
+https://philippberens.wordpress.com/code/circstats/  
+Berens, P. (2009) CircStat: A Matlab Toolbox for Circular Statistics. Journal of Statistical Software, Volume 31, Issue 10. http://www.jstatsoft.org/v31/i10
 
 You may wish to also cite:  
 Sanders, H., Ji, D., Sasaki, T., Leutgeb, J. K., Wilson, M. A., & Lisman, J. E. (2019). Temporal coding and rate remapping: Representation of nonspatial information in the hippocampus. Hippocampus, 29(2), 111-127.  https://doi.org/10.1002/hipo.23020
